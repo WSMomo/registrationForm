@@ -1,1 +1,1 @@
-[A simple registration form]{https://neon-syrniki-287094.netlify.app/}
+[A simple registration form](https://neon-syrniki-287094.netlify.app/)
