@@ -44,7 +44,7 @@ function renderPreview(uName, surname, bday, male, email, pw, confirmPw){
 }
 
 function validateInputForm(uName, surname, bday, email, pw, confirmPw){
-    registrationPreview.style.color = 'red';
+    registrationPreview.classList.add('error-message');
     if(!validateTextInput(uName)){
         console.log("Please enter a valid name");
         registrationPreview.innerHTML = "Please enter a valid name!";
@@ -63,7 +63,7 @@ function validateInputForm(uName, surname, bday, email, pw, confirmPw){
         return;
     } else if(!validatePasswordSecurity(pw)){
         console.log("Please enter a valid Password. Password must be at least 8 character")
-        registrationPreview.innerHTML = `Please enter a valid Password! Password:
+        registrationPreview.innerHTML = `Please enter a valid Password! <br>Password:
         <ul>
         <li>Must contain at least one uppercase letter;</li>
         <li>Must contain at least one lowercase letter;</li>
@@ -77,7 +77,7 @@ function validateInputForm(uName, surname, bday, email, pw, confirmPw){
         registrationPreview.innerHTML = "Your password is different from your confirmation password!";
         return;
     }
-    registrationPreview.style.color = '#0E8388';
+    registrationPreview.classList.remove('error-message');
     renderPreview(uName, surname, userBirthday.value, userGenderMale.checked, userEmail.value, userPassword.value, userPasswordConfirmation.value);
 }
 

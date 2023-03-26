@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     width: 100vw;
     height: 100vh;
@@ -17,12 +18,57 @@ body{
     color: #0E8388;
 }
 
+/* header */
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    width: 100vw;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: #CBE4DE;
+}
+h1{
+    padding: 0 10px;
+    font-size: 0.9em;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 19px;
+}
+.icons {
+    margin-top: 10px;
+    height: 90%;
+    border-radius: 10%;
+    border: none;
+}
+
+.icons:hover{
+    scale: 1.1;
+}
+
+main{
+    margin-top: 7vh;
+    height: 93vh;
+}
+
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 350px;
 }
 
 form div{
@@ -93,4 +139,19 @@ button:hover{
 #registration-preview{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message {
+    color: rgb(185, 16, 16);
+    font-size: 0.8em;
+}
+
+.error-message ul{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
