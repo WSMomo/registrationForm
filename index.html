@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form id="registration-form" action="#">
+        <div>
+            <label for="user-name">Name:</label>
+            <input type="text" name="user-name" id="user-name" autocomplete="given-name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="user-surname">Surname:</label>
+            <input type="text" name="user-surname" id="user-surname" autocomplete="family-name" placeholder="Enter your surname" required>
+        </div>
+        <div>
+            <label for="user-birthday">Birthday:</label>
+            <input type="date" name="user-birthday" id="user-birthday" autocomplete="bday" required>
+        </div>
+            <div id="gender-container">
+                <div>
+                    <label for="user-gender-male">Male</label>
+                    <input type="radio" name="user-gender" id="user-gender-male" autocomplete="sex" value="male" required>
+                </div>
+                <div>
+                    <label for="user-gender-female">Female</label>
+                    <input type="radio" name="user-gender" id="user-gender-female" autocomplete="sex" value="female" required>
+                </div>
+            </div>
+        <div>
+            <label for="user-email">Email:</label>
+            <input type="email" name="user-email" id="user-email" autocomplete="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="user-password">Password:</label>
+            <input type="password" name="user-password" id="user-password" autocomplete="new-password" placeholder="Enter a password" required>
+        </div>
+        <div>
+            <label for="user-password-confirmation">Confirm password:</label>
+            <input type="password" name="user-password-confirmation" id="user-password-confirmation" autocomplete="new-password" placeholder="Repeat the password" required>
+        </div>
+        <div id="conditions">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+        <button type="submit" id="registration">Registrati</button>
+    </form>
+
+    <div id="registration-preview">
+        
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
