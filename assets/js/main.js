@@ -105,5 +105,3 @@ function checkAge(birthday){
     const age = new Date().getFullYear() - bday.getFullYear();
     return (age >= 18) ? true : false;
 }
-
-//Qwe123!@
