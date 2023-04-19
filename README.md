@@ -1,4 +1,4 @@
-# Registration Form README
+# Registration Form
 This is a simple registration form written in HTML, CSS, and JavaScript. It allows users to enter their name, surname, gender, birthday, email, password, and password confirmation. Additionally, users must agree to the terms and conditions in order to submit the form.
 
 ## Usage
